@@ -2,7 +2,7 @@ import speech_recognition as sr
 from pydub import AudioSegment
 
 # Load the audio file
-sound = AudioSegment.from_file('audio.opus', format='opus')
+sound = AudioSegment.from_file('audio.opus', format='opus', codec="libvorbis")
 
 # Save the audio file as WAV
 sound.export('audio.wav', format='wav')
